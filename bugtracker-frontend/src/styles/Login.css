@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 320px;
+}
+
+.bugkiller-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  display: inline-block;
+  animation: jelly 1.5s infinite;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1, 0.9);
+  }
+  50% {
+    transform: scale(0.9, 1.1);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+}
+
+.login-form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffcc00;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: #ffaa00;
+  transform: scale(1.05);
+}
+
+p {
+  margin-top: 10px;
+}
+
+p a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}

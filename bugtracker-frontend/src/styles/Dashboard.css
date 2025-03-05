@@ -1,0 +1,96 @@
+/* Загальний стиль для контейнера */
+div {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  h2, h3 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Заголовок */
+  h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Стиль для форми */
+  form {
+    display: grid;
+    grid-gap: 20px;
+  }
+  
+  /* Вхідні поля та текстові області */
+  input[type="text"],
+  textarea,
+  select,
+  input[type="file"] {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #007bff;
+  }
+  
+  /* Стиль для кнопок */
+  button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Стиль для сповіщень */
+  .alert {
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Стиль для повідомлення з ID створеного багу */
+  h3 {
+    color: #28a745;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Стиль для форми видалення багу */
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  h2 + input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
