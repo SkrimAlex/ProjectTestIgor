@@ -1,0 +1,40 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 60  # Тривалість тесту в секундах
+      arrivalRate: 100  # Кількість нових користувачів (запитів) на секунду
+
+scenarios:
+  - flow:
+      - post:
+          url: '/api/auth/login'
+          json:
+            email: 'testuser@example.com'
+            password: 'Test@1234'
+
+  - flow:
+      - post:
+          url: '/api/auth/register'
+          json:
+            email: 'newuser@example.com'
+            password: 'NewUser@1234'
+
+  - flow:
+      - post:
+          url: '/api/bugs'
+          json:
+            title: 'Test Game'
+            description: 'Game Desc'
+            priority: 'High'
+            status: 'NotComplete'
+            assignedTo: 'dev@example.com'
+            labels: ['Easy', 'ComputerScience']
+            comments: 'Funny game'
+
+  - flow:
+      - delete:
+          url: '/api/result/12345
+
+  - flow:
+      - get:
+          url: '/api/games'
